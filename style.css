@@ -11,18 +11,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
+  background: url(./Images/mountain-peak-above-3840x2160-12251.jpg) no-repeat;
+        background-size: cover
 }
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    
     color: white;
     margin: 20px;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-
+      background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
 }
 .search {
     width: 100%;
