@@ -54,10 +54,11 @@ body{
     margin: 0;
     padding:10px;
     
+    
 
 }
 .search button i {
-    color: white;
+    color: black;
 
 
 }
@@ -76,11 +77,13 @@ margin: 0;
 .weather h1{
     font-size: 80px;
     font-weight: 500;
+    color: black;
 }
 .weather h2{
     font-size: 45px;
     font-weight: 400;
     margin-top: -5px;
+    color: black;
 
 }
 .details {
@@ -95,4 +98,7 @@ margin: 0;
     align-items: center;
     text-align: left;
     margin-right: 10px;
+}
+.col p{
+    color: black;
 }
