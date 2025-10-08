@@ -79,3 +79,10 @@ margin: 0;
     margin-top: -5px;
 
 }
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 50px;
+}
