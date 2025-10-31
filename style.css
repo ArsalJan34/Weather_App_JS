@@ -1,104 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./Images/mountain-peak-above-3840x2160-12251.jpg") no-repeat center center/cover;
 }
-body{
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  background: url(./Images/mountain-peak-above-3840x2160-12251.jpg) no-repeat;
-        background-size: cover
-}
+
 .card {
-    width: 90%;
-    max-width: 470px;
-    
-    color: white;
-    margin: 20px;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-      background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 470px;
+  color: white;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
+
 .search {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.search input{
-    border:0;
-    outline: 0;
-    background: #ebfffc;
-    padding: 10px 25px ;
-    height: 60px;
-    border-radius: 30px;
-    flex:1;
-    margin-right: 16px;
-    font-size: 18px;
 
+.search input {
+  flex: 1;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 0 20px;
+  font-size: 18px;
+  background-color: #ebfffc;
+  margin-right: 10px;
 }
-.search button{
-    outline: 0;
-    border: 0;
-    background:transparent;
-    border-radius: 50%;
-    font-size: 30px;
-    margin: 0;
-    padding:10px;
-    
-    
 
+.search button {
+  border: none;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
 }
+
+.search button:hover {
+  background: #d3f5f0;
+}
+
 .search button i {
-    color: black;
-
-
+  font-size: 24px;
+  color: black;
 }
-.details img {
-width: 50px;
-border-radius: 50%;
-margin-right: 5px;
-}
-.weather-icon{
-width: 300px;
-border-radius: 50%;
-margin: 0;
 
+.weather-icon {
+  width: 200px;
+  margin-top: 10px;
+}
 
+.weather h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: black;
 }
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-    color: black;
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -5px;
-    color: black;
 
+.weather h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+  margin-top: -10px;
 }
+
 .details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 10px;
 }
+
 .col {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin-right: 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
-.col p{
-    color: black;
+
+.col img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.col p {
+  font-size: 16px;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .search input {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .search button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .weather h1 {
+    font-size: 60px;
+  }
+
+  .weather h2 {
+    font-size: 35px;
+  }
 }
