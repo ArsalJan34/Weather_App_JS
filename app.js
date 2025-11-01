@@ -19,18 +19,13 @@ function handleSubmit() {
   }
 
   var url =
-    "https://api.openweathermap.org/data/2.5/weather?q=" +
-    city +
-    "&appid=" +
-    API_KEY +
-    "&units=metric";
+    "https://api.openweathermap.org/data/2.5/weather?q=" +city +"&appid=" +
+    API_KEY + "&units=metric";
 
   console.log("Fetching:", url);
 
 
-  axios
-    .get(url)
-    .then(function (response) {
+  axios.get(url).then(function (response) {
       var data = response.data;
 
       console.log("Success:", data);
@@ -48,14 +43,14 @@ function handleSubmit() {
         weatherIcon.src = "./Images/clud and sun.png";
       } else if (weather.indexOf("rain") !== -1) {
         weatherIcon.src = "./Images/rain.png";
-      } else if (weather.indexOf("clear") !== -1) {
-        weatherIcon.src = "./Images/clear.png";
+        } else if (weather.indexOf("clear") !== -1) {
+         weatherIcon.src = "./Images/clear.png";
       } else if (weather.indexOf("mist") !== -1) {
         weatherIcon.src = "./Images/mist.png";
-      } else if (weather.indexOf("snow") !== -1) {
-        weatherIcon.src = "./Images/snow.png";
+         } else if (weather.indexOf("snow") !== -1) {
+    weatherIcon.src = "./Images/snow.png";
       } else {
-        weatherIcon.src = "./Images/clud and sun.png";
+     weatherIcon.src = "./Images/clud and sun.png";
       }
     })
     .catch(function (error) {
