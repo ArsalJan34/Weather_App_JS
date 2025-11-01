@@ -45,7 +45,7 @@ function handleSubmit() {
       var weather = data.weather[0].main.toLowerCase();
 
       if (weather.indexOf("cloud") !== -1) {
-        weatherIcon.src = "./Images/clouds_nad_sun-removebg-preview.png";
+        weatherIcon.src = "./Images/clud and sun.png";
       } else if (weather.indexOf("rain") !== -1) {
         weatherIcon.src = "./Images/rain.png";
       } else if (weather.indexOf("clear") !== -1) {
@@ -55,7 +55,7 @@ function handleSubmit() {
       } else if (weather.indexOf("snow") !== -1) {
         weatherIcon.src = "./Images/snow.png";
       } else {
-        weatherIcon.src = "./Images/clouds_nad_sun-removebg-preview.png";
+        weatherIcon.src = "./Images/clud and sun.png";
       }
     })
     .catch(function (error) {
